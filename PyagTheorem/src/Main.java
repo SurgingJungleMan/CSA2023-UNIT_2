@@ -54,9 +54,9 @@ public class Main {
         System.out.println("What side are your missing? [A]=Other [B]=Hypo");
         String choice = sc.nextLine();
 
-        if (Objects.equals(choice, "A") || Objects.equals(choice, "a"){
+        if (Objects.equals(choice, "A") || Objects.equals(choice, "a")){
             missingSecond();
-        }else if (Objects.equals(choice, "C") || Objects.equals(choice, "c")){
+        }else if(Objects.equals(choice, "C") || Objects.equals(choice, "c")){
             missingHypo();
         }else{
             System.out.println("Error! Input not registered. Ignore if nothing breaks lol.");
