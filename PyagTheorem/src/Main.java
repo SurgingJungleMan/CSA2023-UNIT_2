@@ -51,11 +51,10 @@ public class Main {
 
 
     static void ask(){
-        System.out.println("What side are your missing? [A]=Adjacent [B]=Bottom [C]=Hypo");
+        System.out.println("What side are your missing? [A]=Other [B]=Hypo");
         String choice = sc.nextLine();
 
-        if (Objects.equals(choice, "A") || Objects.equals(choice, "a")
-                || Objects.equals(choice, "B") || Objects.equals(choice, "b")){
+        if (Objects.equals(choice, "A") || Objects.equals(choice, "a"){
             missingSecond();
         }else if (Objects.equals(choice, "C") || Objects.equals(choice, "c")){
             missingHypo();
