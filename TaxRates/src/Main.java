@@ -52,6 +52,9 @@ public class Main {
             amount = 174238;
         }
 
+        // income - prev is the amount of money past the previous bracket
+        // *rates is the percentage of this amount due
+        // + amount is the fixed amount which is assigned once your income is over 11k.
         tax = ((income-prev)*rates) + amount;
 
         return tax;
@@ -67,6 +70,7 @@ public class Main {
             ask();
         }else if (tax > 0){
             System.out.println("This is your tax : " + tax);
+            // ask();
         }
     }
 
